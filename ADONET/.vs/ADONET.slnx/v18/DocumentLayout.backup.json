@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Administrateur\\Desktop\\Exo\\ADO.NET\\ADONET\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B86B3AA2-0E39-4EE6-B885-A5624856BBB1}|ADONET\\ADONET.csproj|c:\\users\\administrateur\\desktop\\exo\\ado.net\\adonet\\adonet\\classes\\repo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B86B3AA2-0E39-4EE6-B885-A5624856BBB1}|ADONET\\ADONET.csproj|solutionrelative:adonet\\classes\\repo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{17ABEE24-AA06-80A2-9461-38C012EB1C11}|ADONET\\ADONET.csproj|c:\\users\\administrateur\\desktop\\exo\\ado.net\\adonet\\adonet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17ABEE24-AA06-80A2-9461-38C012EB1C11}|ADONET\\ADONET.csproj|solutionrelative:adonet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B86B3AA2-0E39-4EE6-B885-A5624856BBB1}|ADONET\\ADONET.csproj|c:\\users\\administrateur\\desktop\\exo\\ado.net\\adonet\\adonet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B86B3AA2-0E39-4EE6-B885-A5624856BBB1}|ADONET\\ADONET.csproj|solutionrelative:adonet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{17ABEE24-AA06-80A2-9461-38C012EB1C11}|ADONET\\ADONET.csproj|c:\\users\\administrateur\\desktop\\exo\\ado.net\\adonet\\adonet\\classes\\ihm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17ABEE24-AA06-80A2-9461-38C012EB1C11}|ADONET\\ADONET.csproj|solutionrelative:adonet\\classes\\ihm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B86B3AA2-0E39-4EE6-B885-A5624856BBB1}|ADONET\\ADONET.csproj|c:\\users\\administrateur\\desktop\\exo\\ado.net\\adonet\\adonet\\classes\\livre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B86B3AA2-0E39-4EE6-B885-A5624856BBB1}|ADONET\\ADONET.csproj|solutionrelative:adonet\\classes\\livre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{17ABEE24-AA06-80A2-9461-38C012EB1C11}|ADONET\\ADONET.csproj|c:\\users\\administrateur\\desktop\\exo\\ado.net\\adonet\\adonet\\classes\\repo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17ABEE24-AA06-80A2-9461-38C012EB1C11}|ADONET\\ADONET.csproj|solutionrelative:adonet\\classes\\repo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17ABEE24-AA06-80A2-9461-38C012EB1C11}|ADONET\\ADONET.csproj|c:\\users\\administrateur\\desktop\\exo\\ado.net\\adonet\\adonet\\classes\\livre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17ABEE24-AA06-80A2-9461-38C012EB1C11}|ADONET\\ADONET.csproj|solutionrelative:adonet\\classes\\livre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,8 +26,22 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Administrateur\\Desktop\\Exo\\ADO.NET\\ADONET\\ADONET\\Program.cs",
+              "RelativeDocumentMoniker": "ADONET\\Program.cs",
+              "ToolTip": "C:\\Users\\Administrateur\\Desktop\\Exo\\ADO.NET\\ADONET\\ADONET\\Program.cs",
+              "RelativeToolTip": "ADONET\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-19T08:30:15.31Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -34,41 +52,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Repo.cs",
-              "DocumentMoniker": "C:\\Users\\Administrateur\\Desktop\\Exo\\ADO.NET\\ADONET\\ADONET\\Classes\\Repo.cs",
-              "RelativeDocumentMoniker": "ADONET\\Classes\\Repo.cs",
-              "ToolTip": "C:\\Users\\Administrateur\\Desktop\\Exo\\ADO.NET\\ADONET\\ADONET\\Classes\\Repo.cs",
-              "RelativeToolTip": "ADONET\\Classes\\Repo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-19T13:13:00.476Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Livre.cs",
               "DocumentMoniker": "C:\\Users\\Administrateur\\Desktop\\Exo\\ADO.NET\\ADONET\\ADONET\\Classes\\Livre.cs",
               "RelativeDocumentMoniker": "ADONET\\Classes\\Livre.cs",
               "ToolTip": "C:\\Users\\Administrateur\\Desktop\\Exo\\ADO.NET\\ADONET\\ADONET\\Classes\\Livre.cs",
               "RelativeToolTip": "ADONET\\Classes\\Livre.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAIwCMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-19T11:09:49.935Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Administrateur\\Desktop\\Exo\\ADO.NET\\ADONET\\ADONET\\Program.cs",
-              "RelativeDocumentMoniker": "ADONET\\Program.cs",
-              "ToolTip": "C:\\Users\\Administrateur\\Desktop\\Exo\\ADO.NET\\ADONET\\ADONET\\Program.cs",
-              "RelativeToolTip": "ADONET\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAwAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Repo.cs",
+              "DocumentMoniker": "C:\\Users\\Administrateur\\Desktop\\Exo\\ADO.NET\\ADONET\\ADONET\\Classes\\Repo.cs",
+              "RelativeDocumentMoniker": "ADONET\\Classes\\Repo.cs",
+              "ToolTip": "C:\\Users\\Administrateur\\Desktop\\Exo\\ADO.NET\\ADONET\\ADONET\\Classes\\Repo.cs",
+              "RelativeToolTip": "ADONET\\Classes\\Repo.cs",
+              "ViewState": "AgIAAI8AAAAAAAAAAAAIwMIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-19T08:30:15.31Z",
+              "WhenOpened": "2026-01-19T13:13:00.476Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IHM.cs",
+              "DocumentMoniker": "C:\\Users\\Administrateur\\Desktop\\Exo\\ADO.NET\\ADONET\\ADONET\\Classes\\IHM.cs",
+              "RelativeDocumentMoniker": "ADONET\\Classes\\IHM.cs",
+              "ToolTip": "C:\\Users\\Administrateur\\Desktop\\Exo\\ADO.NET\\ADONET\\ADONET\\Classes\\IHM.cs",
+              "RelativeToolTip": "ADONET\\Classes\\IHM.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowEQAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-19T13:23:13.097Z",
               "EditorCaption": ""
             }
           ]
