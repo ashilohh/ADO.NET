@@ -558,9 +558,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrateur\\Desktop\\Exo\\ADO.NET\\ADONET\\ADONET\\ADONET.csproj",
-      "projectName": "ADONET",
-      "projectPath": "C:\\Users\\Administrateur\\Desktop\\Exo\\ADO.NET\\ADONET\\ADONET\\ADONET.csproj",
+      "projectUniqueName": "C:\\Users\\Administrateur\\Desktop\\Exo\\ADO.NET\\ADONET\\ADONET\\exo1.csproj",
+      "projectName": "exo1",
+      "projectPath": "C:\\Users\\Administrateur\\Desktop\\Exo\\ADO.NET\\ADONET\\ADONET\\exo1.csproj",
       "packagesPath": "C:\\Users\\Administrateur\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Administrateur\\Desktop\\Exo\\ADO.NET\\ADONET\\ADONET\\obj\\",
       "projectStyle": "PackageReference",

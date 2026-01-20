@@ -62,16 +62,12 @@ namespace ADONET.Classes
                             reader.GetInt32("id"),
                             reader.GetString("titre"),
                             reader.GetString("auteur"),
-                            reader.GetInt32("annePublication"),
+                            reader.GetInt32("anneePublication"),
                             reader.GetString("isbn")
                             );
 
                         Console.WriteLine(livre);
                     }
-                }
-                else
-                {
-                    Console.WriteLine("Aucun livre n'a été trouvé dans la base de données");
                 }
                 reader.Close();
             }
@@ -86,48 +82,16 @@ namespace ADONET.Classes
 
         }
 
-        public static void RechercherLivreParID(Livre livre)
+        public static void RechercherLivreParID(int id)
         {
             MySqlConnection connection = new MySqlConnection(connectionString);
             try
             {
+                Livre livre = null;
                 string queryCheck = "SELECT COUNT(*) FROM Personne WHERE id = @id";
                 MySqlCommand cmdCheck = new MySqlCommand(queryCheck, connection);
-                cmdCheck.Parameters.AddWithValue("@id", livre.ID);
+                cmdCheck.Parameters.AddWithValue("@id", id);
                 int count = Convert.ToInt32(cmdCheck.ExecuteScalar());
-
-                if (count == 0)
-                {
-                    Console.WriteLine("Aucun livre trouvée avec cet ID");
-                    return;
-                }
-
-                Console.WriteLine("Nouveau Titre :");
-                var titre = Console.ReadLine();
-                Console.WriteLine("Nouvel Auteur :");
-                var auteur = Console.ReadLine();
-                Console.WriteLine("nouvel année de publication :");
-                var anneePublication = int.Parse(Console.ReadLine());
-                Console.WriteLine("Nouvel isbn :");
-                var isbn = Console.ReadLine();
-
-
-                string query = "UPDATE Livre SET titre = @titre , auteur = @auteur , anneePublication = @anneePublication , isbn = @isbn WHERE id = @id";
-
-
-                MySqlCommand cmd = new MySqlCommand(query, connection);
-                cmd.Parameters.AddWithValue("@id", livre.ID);
-                cmd.Parameters.AddWithValue("@titre", titre);
-                cmd.Parameters.AddWithValue("@auteur", auteur);
-                cmd.Parameters.AddWithValue("@anneePublication", anneePublication);
-                cmd.Parameters.AddWithValue("@isbn", isbn);
-
-                int rowsAffected = cmd.ExecuteNonQuery();
-                if (rowsAffected > 0)
-                {
-                    Console.WriteLine("Livre modifié avec succès");
-                }
-
             }
             catch (Exception ex)
             {
@@ -139,7 +103,7 @@ namespace ADONET.Classes
             }
         }
 
-        public static void ModifierLivre(Livre livre)
+        public static void ModifierLivre(int id, string newTitre, string newAuteur, int newAnnee, string newIsbn)
         {
 
             MySqlConnection connection = new MySqlConnection(connectionString);
@@ -147,7 +111,7 @@ namespace ADONET.Classes
             {
                 string queryCheck = "SELECT COUNT(*) FROM Personne WHERE id = @id";
                 MySqlCommand cmdCheck = new MySqlCommand(queryCheck, connection);
-                cmdCheck.Parameters.AddWithValue("@id", livre.ID);
+                cmdCheck.Parameters.AddWithValue("@id", id);
                 int count = Convert.ToInt32(cmdCheck.ExecuteScalar());
 
                 if (count == 0)
@@ -156,36 +120,23 @@ namespace ADONET.Classes
                     return;
                 }
 
-                Console.WriteLine("Nouveau Titre :");
-                var titre = Console.ReadLine();
-                Console.WriteLine("Nouvel Auteur :");
-                var auteur = Console.ReadLine();
-                Console.WriteLine("nouvel année de publication :");
-                var anneePublication = int.Parse(Console.ReadLine());
-                Console.WriteLine("Nouvel isbn :");
-                var isbn = Console.ReadLine();
-
 
                 string query = "UPDATE Livre SET titre = @titre , auteur = @auteur , anneePublication = @anneePublication , isbn = @isbn WHERE id = @id";
 
 
                 MySqlCommand cmd = new MySqlCommand(query, connection);
-                cmd.Parameters.AddWithValue("@id", livre.ID);
-                cmd.Parameters.AddWithValue("@titre", titre);
-                cmd.Parameters.AddWithValue("@auteur", auteur);
-                cmd.Parameters.AddWithValue("@anneePublication", anneePublication);
-                cmd.Parameters.AddWithValue("@isbn", isbn);
+                cmd.Parameters.AddWithValue("@id", id);
+                cmd.Parameters.AddWithValue("@titre", newTitre);
+                cmd.Parameters.AddWithValue("@auteur", newAuteur);
+                cmd.Parameters.AddWithValue("@anneePublication", newAnnee);
+                cmd.Parameters.AddWithValue("@isbn", newIsbn);
 
                 int rowsAffected = cmd.ExecuteNonQuery();
-                if (rowsAffected > 0)
-                {
-                    Console.WriteLine("Livre modifié avec succès");
-                }
 
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Erreur : " + ex.Message);
+                //Console.WriteLine("Erreur : " + ex.Message);
             }
             finally
             {
@@ -193,7 +144,7 @@ namespace ADONET.Classes
             }
         }
 
-        public static void SupprimerLivre(Livre livre)
+        public static void SupprimerLivre(int id)
         {
             MySqlConnection connection = new MySqlConnection(connectionString);
             try
@@ -202,22 +153,14 @@ namespace ADONET.Classes
 
                 string query = "DELETE FROM Livre WHERE id = @id";
                 MySqlCommand cmd = new MySqlCommand(query, connection);
-                cmd.Parameters.AddWithValue("@id", livre.ID);
+                cmd.Parameters.AddWithValue("@id", id);
 
                 int rowsAffected = cmd.ExecuteNonQuery();
 
-                if (rowsAffected > 0)
-                {
-                    Console.WriteLine("Livre supprimé avec succès");
-                }
-                else
-                {
-                    Console.WriteLine("Aucun Livre trouvée a cet ID");
-                }
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Erreur :" + ex.Message);
+                //Console.WriteLine("Erreur :" + ex.Message);
             }
             finally
             {

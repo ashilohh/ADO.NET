@@ -12,6 +12,8 @@ namespace ADONET.Classes
         public int AnneePublication { get; set; }
         public string Isbn { get; set; }
 
+        public Livre() { }
+
         public Livre(string titre, string auteur, int anneePublication, string isbn)
         {
             Titre = titre;
@@ -19,7 +21,7 @@ namespace ADONET.Classes
             AnneePublication = anneePublication;
             Isbn = isbn;
         }
-        public Livre(int id) 
+        public Livre(int id, string titre, string auteur, int anneePublication, string isbn)
         {
             ID = id;
         }

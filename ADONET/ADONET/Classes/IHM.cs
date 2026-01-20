@@ -6,24 +6,26 @@ namespace ADONET.Classes
 {
     internal class IHM
     {
+        private Repo _repo;
 
-        public void DisplayMenu()
+        public IHM()
         {
-            Console.WriteLine("MENU");
-            Console.WriteLine("1- Ajouter un livre");
-            Console.WriteLine("2- Afficher tous les livres");
-            Console.WriteLine("3- Recherché un livre par ID");
-            Console.WriteLine("4- Modifier un livre");
-            Console.WriteLine("5- Supprimer un livre");
-            Console.WriteLine("0- Quitter");
-            Console.WriteLine("Votre choix :");
+            _repo = new Repo();
         }
 
         public void Menu()
         {
             while (true)
             {
-                this.DisplayMenu();
+                Console.WriteLine("MENU");
+                Console.WriteLine("1- Ajouter un livre");
+                Console.WriteLine("2- Afficher tous les livres");
+                Console.WriteLine("3- Recherché un livre par ID");
+                Console.WriteLine("4- Modifier un livre");
+                Console.WriteLine("5- Supprimer un livre");
+                Console.WriteLine("0- Quitter");
+                Console.WriteLine("Votre choix :");
+
                 string choix = Console.ReadLine() ?? "";
 
                 switch (choix)
@@ -62,7 +64,16 @@ namespace ADONET.Classes
                         Console.Write("Id du livre à modifier:");
                         id = int.Parse(Console.ReadLine());
 
-                        Repo.ModifierLivre(id);
+                        Console.WriteLine("Nouveau Titre :");
+                        var newTitre = Console.ReadLine();
+                        Console.WriteLine("Nouvel Auteur :");
+                        var newAuteur = Console.ReadLine();
+                        Console.WriteLine("nouvel année de publication :");
+                        var newAnnee= int.Parse(Console.ReadLine());
+                        Console.WriteLine("Nouvel isbn :");
+                        var newIsbn = Console.ReadLine();
+
+                        Repo.ModifierLivre(id, newTitre, newAuteur, newAnnee, newIsbn);
                         break;
 
                     case "5":
@@ -75,6 +86,7 @@ namespace ADONET.Classes
 
                     case "0":
                         return;
+
                     default:
                         Console.WriteLine("choix pas compris");
                         break;

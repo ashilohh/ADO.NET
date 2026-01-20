@@ -1,3 +1,4 @@
 <Solution>
-  <Project Path="ADONET/ADONET.csproj" />
+  <Project Path="ADONET/exo1.csproj" />
+  <Project Path="exo2/exo2.csproj" Id="2071d2e5-69af-40b6-b312-8a244e051c6d" />
 </Solution>

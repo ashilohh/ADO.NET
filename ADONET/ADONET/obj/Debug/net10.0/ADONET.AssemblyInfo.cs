@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ADONET")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b0abbd4735c426cdabc5d179185a6a66fc189157")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b983d4897544f38e5893da8f0c48dfcf1d8507c8")]
 [assembly: System.Reflection.AssemblyProductAttribute("ADONET")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ADONET")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
